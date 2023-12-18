@@ -1,0 +1,11 @@
+file_path = "AppleData.txt"
+with open(file_path, 'r') as file:
+    file_contents = file.read()
+print(file_contents) 
+
+with open("AppleData.txt", "r") as f:
+    price = [float(line.strip()) for line in f]
+mean_price = sum(price) / len(price)
+std_dev_price = (sum((x - mean_price) ** 2 for x in price) / len(price)) ** 0.5
+print("Mean Price:", mean_price)
+print("Standard Deviation:", std_dev_price)
