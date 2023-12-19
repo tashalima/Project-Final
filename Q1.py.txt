@@ -1,3 +1,4 @@
+    #Q1.py
 file_path = "AppleData.txt"
 with open(file_path, 'r') as file:
     file_contents = file.read()
